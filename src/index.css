@@ -14,3 +14,11 @@
     @apply absolute rounded-l-full top-52 bg-blue-600;
   }
 }
+@media (min-width: 1020px) {
+  .bg-tab {
+    width: 2000px;
+    height: 300px;
+    right: 40%;
+    @apply absolute rounded-r-full top-52 bg-blue-600;
+  }
+}

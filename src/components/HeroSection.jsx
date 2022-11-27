@@ -1,7 +1,7 @@
 import img from '../images/illustration-hero.svg';
 const HeroSection = () => {
   return (
-    <div className="flex flex-col-reverse p-6 mx-auto lg:flex-row mt-24 lg:mb-0">
+    <div className="container flex flex-col-reverse p-6 mx-auto lg:flex-row mt-24 lg:mb-0">
       <div className="flex flex-col space-y-8 lg:mt-16 lg:w-1/2 lg:ml-12">
         <h2 className="text-3xl lg:text-5xl font-semibold text-center lg:text-left">
           A Simple Bookmark Manager
@@ -28,7 +28,7 @@ const HeroSection = () => {
         <img
           src={img}
           alt=""
-          className="relative z-10 lg:top-16  xl:top-0 overflow-x-visible mx-auto md:w-[30rem] md:h-[24rem] lg:mb-0"
+          className="relative z-10 lg:top-16 xl:top-0 overflow-x-visible mx-auto md:w-[30rem] md:h-[24rem] lg:mb-0"
         />
       </div>
     </div>
