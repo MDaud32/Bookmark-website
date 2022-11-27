@@ -1,15 +1,15 @@
 import Nav from './components/Nav';
 import HeroSection from './components/HeroSection';
-import LinkPage from './components/LinkPage';
+import PanelLayout from './components/panelLayout';
 import StatPage from './components/StatPage';
 
 function App() {
   return (
-    <div className="bg-white min-h-screen items-center justify-center">
+    <div className="bg-white min-h-screen items-center justify-center overflow-x-hidden">
       <Nav />
-      {/* <HeroSection />
-      <LinkPage />
-      <StatPage /> */}
+      <HeroSection />
+      <PanelLayout />
+      {/* <StatPage /> */}
     </div>
   );
 }

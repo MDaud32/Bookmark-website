@@ -6,3 +6,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (min-width: 1020px) {
+  .bg-hero {
+    width: 2000px;
+    height: 300px;
+    left: 30%;
+    @apply absolute rounded-l-full top-52 bg-blue-600;
+  }
+}

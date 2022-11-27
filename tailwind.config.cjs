@@ -10,8 +10,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['Josefin Sans', 'sans-serif'],
-        alata: ['Alata'],
+        sans: ['Rubik', 'sans-serif'],
       },
     },
   },
