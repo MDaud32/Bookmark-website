@@ -1,7 +1,8 @@
 import Nav from './components/Nav';
 import HeroSection from './components/HeroSection';
 import PanelLayout from './components/panelLayout';
-import StatPage from './components/StatPage';
+import DownloadPage from './components/DownloadPage';
+import Faq from './components/Faq';
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       <Nav />
       <HeroSection />
       <PanelLayout />
-      {/* <StatPage /> */}
+      <DownloadPage />
+      <Faq />
     </div>
   );
 }
