@@ -10,11 +10,6 @@ const faqs = [
     answer: `If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.`,
   },
   {
-    id: 1,
-    question: 'How long does it take to get my order?',
-    answer: `Most customers can expect to receive their food and supplies within 1 to 3 days. Orders that require prescription approval or personalization may take longer to ship.`,
-  },
-  {
     id: 2,
     question: 'Do you offer technical support?',
     answer: `No.`,
@@ -29,6 +24,11 @@ const faqs = [
     question: 'How do I contact support?',
     answer: `We offer support over email, and the best way to contact us is through the in-app help menu.`,
   },
+  {
+    id: 5,
+    question: 'How long does it take to get my order?',
+    answer: `Most customers can expect to receive their food and supplies within 1 to 3 days. Orders that require prescription approval or personalization may take longer to ship.`,
+  },
 ];
 const FAQ = () => {
   return (
@@ -40,14 +40,14 @@ const FAQ = () => {
           answered please feel free to email us.
         </p>
       </div>
-      <div className="w-full h-screen px-4 pt-8">
-        <div className="mx-auto lg:w-[800px] h-[800px] lg:max-w-3xl rounded-2xl bg-white p-2 text-lg">
+      <div className="w-full px-4 pt-8">
+        <div className="mx-auto lg:w-[800px] h-[400px] lg:max-w-3xl rounded-2xl bg-white p-2 text-lg">
           <h1 className="text-center text-4xl py-4">FAQ</h1>
           {faqs.map((faq) => (
-            <Disclosure>
+            <Disclosure key={faq.id}>
               {({ open }) => (
                 <>
-                  <div key={faq.id}>
+                  <div>
                     <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-3 mb-2 text-left font-medium text-xl border-b">
                       <span>{faq.question}</span>
                       {open ? <BiMinus /> : <BsPlusLg />}

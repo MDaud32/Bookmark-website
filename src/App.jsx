@@ -3,6 +3,7 @@ import HeroSection from './components/HeroSection';
 import PanelLayout from './components/panelLayout';
 import DownloadPage from './components/DownloadPage';
 import Faq from './components/Faq';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <PanelLayout />
       <DownloadPage />
       <Faq />
+      <Footer />
     </div>
   );
 }
